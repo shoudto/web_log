@@ -1,10 +1,14 @@
 class BlogsController < ApplicationController
 
      #index
-     get '/blogs' do 
-        @blogs = Blog.all 
-
-        erb :"blogs/index"
+     get '/blogs' do
+        if logged_in?
+            @user = current_user
+            @blogs = @user.blogs
+            erb :"blogs/index"
+        else 
+            redirect "/signup"
+        end 
     end 
 
     #new 
