@@ -1,0 +1,18 @@
+<h1 style="text-align:center;">Create a Beer Blog!</h1>
+
+<form action="/blogs" method="post">
+
+    <select name="user_id">  
+        <% @users.each do |user| %>
+            <option value="<%= user.id %>"><%= user.name %></option> 
+        <% end %>
+    </select><br><br>
+
+    <label>Title:</label>
+    <input type="text" name="title"><br><br>
+
+    <label>Body:</label>
+    <textarea name="body"></textarea><br><br>
+
+    <input type="submit">
+</form>
