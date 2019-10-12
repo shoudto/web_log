@@ -1,7 +1,7 @@
 class BlogsController < ApplicationController
 
-    #index
-    get '/blogs' do 
+     #index
+     get '/blogs' do 
         @blogs = Blog.all 
 
         erb :"blogs/index"
