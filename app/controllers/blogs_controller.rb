@@ -2,7 +2,7 @@ class BlogsController < ApplicationController
 
      #index
      get '/blogs' do
-        if logged_in?
+        if session[:user_id]
             @user = current_user
             @blogs = @user.blogs
             erb :"blogs/index"

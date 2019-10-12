@@ -8,4 +8,5 @@ use Rack::MethodOverride
 use SessionsController 
 use UsersController
 use BlogsController
+use Rack::Flash
 run ApplicationController

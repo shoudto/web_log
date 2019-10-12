@@ -7,6 +7,7 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
     enable :sessions
     set :session_secret, "secret"
+    use Rack::Flash
   end
 
   get "/" do
@@ -16,7 +17,7 @@ class ApplicationController < Sinatra::Base
   helpers do 
 
     def logged_in?
-      session[:user_id]
+      !!session[:user_id]
     end
 
     def current_user 
