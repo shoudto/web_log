@@ -1,0 +1,15 @@
+<h1>Signup a New Account</h1>
+
+<form action="/users" method="post">
+  
+    <label for="name">Name:</label>
+    <input value="text" id="name" name="name" value="<%= @user ? @user.name : "" %>"/>
+
+    <label for="email">Email:</label>
+    <input value="text" id="email" name="email" value="<%= @user ? @user.email : "" %>"/>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"/>
+
+    <input type="submit">
+</form>
