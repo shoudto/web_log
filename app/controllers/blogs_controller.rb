@@ -19,16 +19,27 @@ class BlogsController < ApplicationController
     end 
 
     #create
-    post '/blogs' do 
-        user = User.find_by_id(params[:user_id])
-        @blog = user.blogs.build(params)
+    post '/blogs' do
+         @user = current_user
+        # @user = User.find_by_id(params[:user_id])
+        @blog = @user.blogs.build(params)
 
         if @blog.save
             redirect "/blogs"
         else
             redirect "/blogs/new"
         end 
-    end 
+    end
+    
+    #show all blogs 
+    # get '/blogs/all' do 
+    #     if logged_in? 
+    #         @blogs = Blog.all
+    #         erb :"blogs/index"
+    #     else 
+    #         redirect "/signup"
+    #     end     
+    # end 
 
     #show
     get '/blogs/:id' do 
