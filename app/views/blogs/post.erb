@@ -1,6 +1,9 @@
-<h2><%= @blog.title %></h2>
+<h2><%= @blog.name %></h2>
+<p><%= @blog.title %></p>
+<p><%= @blog.brewery %></p>
 <p><%= @blog.body %></p>
-<a href="/blogs/<%= @blog.id %>/edit">Edit Blog</a> 
+
+<a href="/blogs/<%= @blog.id %>/edit">Edit Blog</a><br><br> 
 
 <form action="/blogs/<%= @blog.id %>" method="post">
   	<input type="hidden" name="_method" value="delete" />
