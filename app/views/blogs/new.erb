@@ -1,14 +1,14 @@
-<h1 style="text-align:center;">Create a Beer Blog!</h1>
+<h1 style="text-align:center;">Create a Beer Log!</h1>
 
 <form action="/blogs" method="post">
 
-    <label>Title:</label>
+    <label>Beer Name:</label>
     <input type="text" name="title" value="<%= @blog ? @blog.title : ""%>"><br><br>
 
     <label>Brewery Name:</label>
     <input type="text" name="brewery" value="<%= @blog ? @blog.brewery : ""%>"><br><br>
 
-    <label>Beer Name:</label>
+    <label>Beer Type:</label>
     <input type="text" name="name" value="<%= @blog ? @blog.name : ""%>"><br><br>
 
     <label>Description:</label>

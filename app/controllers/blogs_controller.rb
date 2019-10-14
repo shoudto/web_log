@@ -30,16 +30,6 @@ class BlogsController < ApplicationController
             redirect "/blogs/new"
         end 
     end
-    
-    #show all blogs 
-    # get '/blogs/all' do 
-    #     if logged_in? 
-    #         @blogs = Blog.all
-    #         erb :"blogs/index"
-    #     else 
-    #         redirect "/signup"
-    #     end     
-    # end 
 
     #show
     get '/blogs/:id' do 
@@ -55,7 +45,7 @@ class BlogsController < ApplicationController
     #edit
     get '/blogs/:id/edit' do 
         @blog = Blog.find_by_id(params[:id])
-
+        
         erb :"blogs/edit"
     end 
 

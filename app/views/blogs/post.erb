@@ -1,7 +1,12 @@
-<h2><%= @blog.name %></h2>
-<p><%= @blog.title %></p>
-<p><%= @blog.brewery %></p>
-<p><%= @blog.body %></p>
+<br><br>
+<h2 style="font-family:Comic Sans MS;"><%= @blog.brewery %></h2>
+<p style="font-family:Comic Sans MS;">Beer Name: <%= @blog.title %></p>
+<p style="font-family:Comic Sans MS;">Type of Beer: <%= @blog.name %></p>
+
+<section>
+  <h2>Beer Log</h2>
+  <p style="font-family:Comic Sans MS;"><%= @blog.body %></p>
+</section>
 
 <a href="/blogs/<%= @blog.id %>/edit">Edit Blog</a><br><br> 
 
@@ -9,4 +14,5 @@
   	<input type="hidden" name="_method" value="delete" />
   
   	<input type="submit" value="Delete">
-  </form>
+  </form> 
+

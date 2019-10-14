@@ -1,5 +1,5 @@
 <% @blogs.each do |blog| %>
-    <h3><a href="/blogs/<%= blog.id %>"><%= blog.name %></a></h3>
+    <h3 style="text-align:center;"><a href="/blogs/<%= blog.id %>"><%= blog.brewery %>, <%= blog.title %></a></h3>
 <% end %><br> 
 
-<%= @user.name %>
+<p style="font-family:Comic Sans MS;"><strong>Welcome, <%= @user.name %></strong></p>
