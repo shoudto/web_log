@@ -53,7 +53,7 @@ class BlogsController < ApplicationController
     patch "/blogs/:id" do 
         @blog = Blog.find_by_id(params[:id])
 
-        if @blog.update(title: params[:title], name: params[:name], brewery: params[:brewery], body: params[:body])
+        if @blog.update(title: params[:title], style: params[:style], brewery: params[:brewery], body: params[:body])
             redirect "/blogs/#{@blog.id}"
         else
             redirect "/blogs/#{@blog.id}/edit"
