@@ -18,4 +18,5 @@ In my beer log application a welcome page will show and to access your personal 
 This project is avaialble as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Code of Conduct
-Everyone interacting in the MedicationLog project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
+Everyone interacting in the MedicationLog project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct. 
+
