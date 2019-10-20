@@ -1,11 +1,11 @@
 <br><br>
-<h2 style="font-family:Comic Sans MS;">Brewery: <%= @blog.brewery %></h2>
-<p style="font-family:Comic Sans MS;">Beer Name: <%= @blog.title %></p>
-<p style="font-family:Comic Sans MS;">Type of Beer: <%= @blog.style %></p>
+<h2 style="font-family:Comic Sans MS; text-align:center;">Brewery: <%= @blog.brewery %></h2>
+<p style="font-family:Comic Sans MS; text-align:center;">Beer Name: <strong><%= @blog.title %></strong></p>
+<p style="font-family:Comic Sans MS; text-align:center;">Type of Beer: <strong><%= @blog.style %></strong></p>
 
 <section>
-  <h2>Beer Log</h2>
-  <p style="font-family:Comic Sans MS;"><%= @blog.body %></p>
+  <h2 style="font-family:Comic Sans MS; text-align:center;">Beer Log</h2>
+  <p style="font-family:Comic Sans MS; text-align:center;"><%= @blog.body %></p>
 </section>
 
 <a href="/blogs/<%= @blog.id %>/edit">Edit Blog</a><br><br> 
