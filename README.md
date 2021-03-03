@@ -1,7 +1,7 @@
 # BeerLog
 
 ## Overview
-So many breweries and bars out there it's so hard to keep track and we trying to use notbooks and pencil but such a hassle to carry. We beer drinkers would love to keep a log of all the beers and review about them. Well you can this Beer Log web keeps track of all your logs you can create. To keep track of all the beers you tried. You can signup as a new user or login and create or edit your first or many beer logs and delete the ones you don't need it's all done here on the beer log web.
+So many breweries and bars out there... it has suddently become hard to keep track. We try to use a pen and notebook but it can be such a hassle to carry. We beer drinkers would love a log of all the beers and review about them. With this Beer Log I have facilitated the tracking of all the tasted beers. You can signup as a new user or login, create and edit your first or many beer logs and delete the ones you no longer need. It is all done here on the Beer Log.
 
 ## Installation
 To execute this application, 
